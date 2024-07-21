@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Carros com typescript</title>
+  </head>
+  <body>
+    <div>
+      <h1>Anuncie seu carro!</h1>
+      <form>
+        <label for="kmRodado"> Quantos km seu carro já rodou? </label>
+        <br />
+        <input
+          type="number"
+          placeholder="Ex: 20"
+          class="kmRodado"
+          name="kmRodado"
+          required
+        />
+        <br />
+        <label for="gasolinaAtual">
+          Quantos litros de gasolina seu carro tem?
+        </label>
+        <br />
+        <input
+          type="number"
+          class="gasolinaAtual"
+          placeholder="Ex: 15L"
+          name="gasolinaAtual"
+          required
+        />
+        <br />
+        <label for="cor"> Qual é a cor do carro? </label>
+        <br />
+        <input type="color" class="cor" name="cor" value="#ffffff" required />
+        <br />
+        <input type="submit" value="Anunciar!" />
+      </form>
+      <section id="carros"></section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
