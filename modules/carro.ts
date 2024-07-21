@@ -5,8 +5,4 @@ export class Carro {
     public readonly quilometrosRodados: number,
     public readonly corAtual: string
   ) {}
-
-  public get gasolinaPraDezKm() {
-    return 2;
-  }
 }
