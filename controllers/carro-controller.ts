@@ -1,5 +1,5 @@
-import { Carro } from "../modules/carro";
-import { Carros } from "../modules/carros";
+import { Carro } from "../modules/carro.js";
+import { Carros } from "../modules/carros.js";
 
 export class CarroController {
   private _inputQuilometros: HTMLInputElement;
