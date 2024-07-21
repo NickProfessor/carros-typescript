@@ -27,15 +27,15 @@ export class CarroController {
     const quilometrosRodados: number = parseInt(this._inputQuilometros.value);
     const gasolinaAtual: number = parseInt(this._inputGasolina.value);
     const cor: string = this._inputCor.value;
-    return new Carro(id, quilometrosRodados, gasolinaAtual, cor);
+    return new Carro(id, gasolinaAtual, quilometrosRodados, cor);
   }
   public renderizaCarro(carro: Carro): void {
     this._campoDeCarro.innerHTML += `
         <div class="carro">
             <h1>Carro ${carro.id}</h1>
             <i class="fa-solid fa-car" style="color: ${carro.corAtual}"></i>
-            <h3>Km rodados: ${carro.quilometrosRodados} km</h3>
             <h3>Gasolina atual: ${carro.gasolinaAtual} L</h3>
+            <h3>Km rodados: ${carro.quilometrosRodados} km</h3>
         </div>
     `;
   }
